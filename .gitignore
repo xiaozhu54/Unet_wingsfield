@@ -1,0 +1,40 @@
+# macOS / editor
+.DS_Store
+*.swp
+*.swo
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+.venv_*/
+venv/
+env/
+
+# Training datasets: do not upload CFD data
+train_data_2822/
+train_data_hybridwings/
+*.npz
+
+# Model checkpoints and generated training/evaluation outputs
+results/
+results_*/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+training_output.log
+
+# Generated plots/reports can be regenerated
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.csv
+
+# Local notebook artifacts
+.ipynb_checkpoints/
